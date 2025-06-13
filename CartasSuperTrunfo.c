@@ -59,7 +59,6 @@ int main() {
 
     // segundo ficha
 
-    /*
     printf("Carta 2\n\n");
     printf("Digite o Estado: ");
     scanf("%s", &estado2[2]);
@@ -79,10 +78,9 @@ int main() {
     printf("Digite o PIB: ");
     scanf("%f", &pib2);
 
-    printf("Digite a quantdidade de pontos turisticos: ");
+    printf("Digite a quantidade de pontos turisticos: ");
     scanf("%d", &num_pontos_turisticos2);
     printf("\n\n");
-    */
 
     // mostrar as cartas
 
@@ -102,6 +100,25 @@ int main() {
 
     printf("Densidade populacional: %.2f habitantes por km quadrado\n", dens_populacao1);
     printf("PIB per capita: R$ %.2f por habitante\n\n", pib_p_capita1);
+
+    
+    printf("Carta 2\n\n");
+    printf("Estado: %s\n", &estado2[2]);
+    printf("Codigo: %s\n", &cod_carta2[3]);
+    printf("Nome da Cidade: %s\n", &nome_cidade2[20]);
+    printf("Populacao: %d habitantes\n", populacao2);
+    printf("Area: %.2f km2\n", area_cidade2);
+    printf("PIB: R$ %.2f\n", pib2);
+    printf("Numero de pontos turisticos: %d\n", num_pontos_turisticos2);
+
+    // acrescentar dois itens para tarefa desafio aventureiro
+
+    dens_populacao2 = (float) (populacao2 / area_cidade2);
+    pib_p_capita2 = (float)(pib2 / populacao2);
+
+    printf("Densidade populacional: %.2f habitantes por km quadrado\n", dens_populacao2);
+    printf("PIB per capita: R$ %.2f por habitante\n\n", pib_p_capita2);
+
 
     return 0;
 }
